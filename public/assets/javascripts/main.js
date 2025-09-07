@@ -1,3 +1,9 @@
+const preloader = document.querySelector("#preloader");
+if (preloader) {
+    window.addEventListener("load", () => {
+        preloader.remove();
+    });
+}
 document.addEventListener("DOMContentLoaded", () => {
     "use strict";
 
@@ -364,12 +370,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /**
      * Preloader
      */
-    const preloader = document.querySelector("#preloader");
-    if (preloader) {
-        window.addEventListener("load", () => {
-            preloader.remove();
-        });
-    }
 
     const rtlButton = document.getElementById("rtl-button");
     const styleLink = document.getElementById("theme-style");
