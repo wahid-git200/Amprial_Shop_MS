@@ -452,7 +452,7 @@
                 </div>
 
                 <div class="col-md-7">
-                    @include('partials\contact')
+                    @include('partials.contact')
                 </div>
             </div>
         </div>
