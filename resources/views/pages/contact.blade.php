@@ -41,21 +41,21 @@
                     <div class="content">
                         <!-- Info-1 -->
                         <div class="info">
-                            <i class="bi bi-telephone-inbound-fill mr-15"></i>
+                            <i class="bi bi-telephone-inbound-fill mr-15"style="display: contents;"></i>
                             <h4 class="d-inline-block" style="font-size: 20px">نمبر تماس:
                                 <br>
                                 <span style="font-size: 15px ;    color: #000;">0773454544 , 0783456363</span></h4>
                         </div>
                         <!-- Info-2 -->
                         <div class="info">
-                            <i class="bi bi-envelope-fill mr-15"></i>
+                            <i class="bi bi-envelope-fill mr-15" style="display: contents;"></i>
                             <h4 class="d-inline-block" style="font-size: 20px">ایمیل:
                                 <br>
                                 <span style="font-size: 15px ;    color: #000;">amperial@gmail.com</span></h4>
                         </div>
                         <!-- Info-3 -->
                         <div class="info">
-                            <i class="bi bi-geo-alt-fill mr-15"></i>
+                            <i class="bi bi-geo-alt-fill mr-15" style="display: contents;"></i>
                             <h4 class="d-inline-block" style="font-size: 20px">آدرس:<br>
                                 <span style="font-size: 15px;    color: #000;">برچی - تانگ تیل - مارکیت احمدیان - منزل 2 - دوکان نمبر 35</span></h4>
                         </div>
