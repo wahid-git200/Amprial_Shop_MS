@@ -62,8 +62,8 @@
                   </div>
                 </div>
               
-                <div class="ttttt" style="margin-left: 20px; font-size: 20px; border: 0.5px solid gray; padding: 3px 25px; border-radius: 19px; background: #3a3f51;" >
-                    <a style="text-decoration:none; color:rgb(229, 229, 229)" href="{{route('pages.services')}}">خدمات</a>
+                <div class="ttttt btn btn-outline-primary" style="margin-left: 20px; " >
+                    <a style="text-decoration:none;" href="{{route('pages.home')}}">خانه</a>
                 </div>
             
             <!-- App header actions end -->

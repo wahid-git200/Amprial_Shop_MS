@@ -226,7 +226,8 @@ $given_money=$total_withdrawal;
                                         {{ Jalalian::fromDateTime($sell->created_at)->format('Y/m/d') }}
                                     </td>
                                     <td style="text-align:center;">
-                                      <a href="javascript:void(0);" class="btn_edit"  style="text-decoration: none;"
+                                      <a href="javascript:void(0);" class="btn_edit "  style="text-decoration: none;"
+                                      class="btn_edits"
                                           data-type="sale" 
                                           data-id="{{ $sell->id }}" 
                                           data-name="{{ $sell->product_name }}" 
@@ -236,7 +237,7 @@ $given_money=$total_withdrawal;
                                           <i class="bi bi-pencil-square" style="font-size:22px; padding:3px; background:#00ff379c; color:#0000ffb5; border-radius:3px;"></i>
                                         </a>
                                        <a href="{{ route('admin.sales.delete', $sell->id) }}"
-                                          class="btn_delete"
+                                          class="btn_delete btn_deletes"
                                           onclick="return confirm('آیا مطمئن هستید که می‌خواهید این فروش را حذف کنید؟');"
                                           style="text-decoration: none; margin-right:10px">
                                             <i title="حذف" class="bi bi-trash"
@@ -273,6 +274,7 @@ $given_money=$total_withdrawal;
                                     </td>
                                     <td style="text-align:center;   background-color: rgb(217 , 217 ,217);">
                                       <a href="javascript:void(0);" class="btn_edit"  style="text-decoration: none;"
+                                      class="btn_edits"
                                         data-type="sale" 
                                         data-id="{{ $sell->id }}" 
                                         data-name="{{ $sell->product_name }}" 
@@ -283,7 +285,7 @@ $given_money=$total_withdrawal;
                                       </a>
                                         
                                         <a href="{{ route('admin.sales.delete', $sell->id) }}"
-                                          class="btn_delete"
+                                          class="btn_delete btn_deletes"
                                           onclick="return confirm('آیا مطمئن هستید که می‌خواهید این فروش را حذف کنید؟');"
                                           style="text-decoration: none; margin-right:10px">
                                             <i title="حذف" class="bi bi-trash"
@@ -358,6 +360,7 @@ $given_money=$total_withdrawal;
                                     </td>
                                     <td style=" text-align:center;   ">
                                         <a href="javascript:void(0);" class="btn_edit"  style="text-decoration: none;"
+                                        class="btn_edits"
                                           data-type="purchase" 
                                           data-id="{{ $buy->id }}" 
                                           data-name="{{ $buy->product_name }}" 
@@ -367,7 +370,7 @@ $given_money=$total_withdrawal;
                                           <i class="bi bi-pencil-square" style="font-size:22px; padding:3px;      background:#00ff379c; color:#0000ffb5; border-radius:3px;"></i>
                                         </a>
                                         <a href="{{ route('admin.purchases.delete', $buy->id) }}"
-                                          class="btn_delete"
+                                          class="btn_delete btn_deletes"
                                             onclick="return confirm('آیا مطمئن هستید که می‌خواهید این خرید را حذف کنید؟');"
                                             style="text-decoration: none; margin-right:10px">
                                               <i title="حذف" class="bi bi-trash"
@@ -405,6 +408,7 @@ $given_money=$total_withdrawal;
                                     </td>
                                     <td style=" text-align:center;  background-color: rgb(217 , 217 ,217);">
                                        <a href="javascript:void(0);" class="btn_edit"  style="text-decoration: none;"
+                                       class="btn_edits"
                                           data-type="purchase" 
                                           data-id="{{ $buy->id }}" 
                                           data-name="{{ $buy->product_name }}" 
@@ -414,7 +418,7 @@ $given_money=$total_withdrawal;
                                           <i class="bi bi-pencil-square" style="font-size:22px; padding:3px; text-decoration:none; background:#00ff379c; color:#0000ffb5; border-radius:3px;"></i>
                                         </a>
                                         <a href="{{ route('admin.purchases.delete', $buy->id) }}"
-                                          class="btn_delete"
+                                          class="btn_delete btn_deletes"
                                           onclick="return confirm('آیا مطمئن هستید که می‌خواهید این خرید را حذف کنید؟');"
                                           style="text-decoration: none; margin-right:10px">
                                             <i title="حذف" class="bi bi-trash"
@@ -473,7 +477,7 @@ $given_money=$total_withdrawal;
                                     <td style=" text-align:center;   ">
 
                                         <a href="javascript:void(0)" 
-                                          class="btn_edit_withdrawal"
+                                          class="btn_edit_withdrawal btn_edits"
                                           data-id="{{ $withdrawal->id }}"
                                           data-amount="{{ $withdrawal->amount }}"
                                           data-description="{{ $withdrawal->description }}"
@@ -484,6 +488,7 @@ $given_money=$total_withdrawal;
                                         </a>
 
                                           <a href="{{ route('admin.withdrawal.delete', $withdrawal->id) }}"
+                                            class="btn_deletes"
                                           onclick="return confirm('آیا برای حذف مطمئن هستید؟');"
                                           style="text-decoration: none; margin-right:10px">
                                             <i title="حذف" class="bi bi-trash"
@@ -501,7 +506,8 @@ $given_money=$total_withdrawal;
                                     <td style=" text-align:center;  background-color: rgb(217 , 217 ,217);">
 
                                 <a href="javascript:void(0)" 
-                                  class="btn_edit_withdrawal"
+
+                                  class="btn_edit_withdrawal btn_edits"
                                   data-id="{{ $withdrawal->id }}"
                                   data-amount="{{ $withdrawal->amount }}"
                                   data-description="{{ $withdrawal->description }}"
@@ -512,6 +518,7 @@ $given_money=$total_withdrawal;
                                 </a>
 
                                         <a href="{{ route('admin.withdrawal.delete', $withdrawal->id) }}"
+                                          class="btn_deletes"
                                           onclick="return confirm('آیا برای حذف مطمئن هستید؟');"
                                           style="text-decoration: none; margin-right:10px">
                                             <i title="حذف" class="bi bi-trash"

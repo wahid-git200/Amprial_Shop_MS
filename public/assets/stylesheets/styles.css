@@ -1737,6 +1737,7 @@ section {
 
 @media (max-width: 991px) {
     .hero {
+        max-height: 70%;
         background: url(../images/hero-bg.html) center center;
     }
     .hero h2 {
@@ -1749,6 +1750,51 @@ section {
         border-radius: 0px;
         overflow: hidden;
     }
+
+    p {
+        font-size: 1.3rem !important;
+        line-height: 1.4 !important;
+    }
+    span {
+        font-size: 25px !important;
+        font-weight: normal;
+    }
+    h4 {
+        font-size: 30px !important;
+        color: #000000;
+        font-weight: bold;
+    }
+    .btn-get-started {
+        font-size: 25px !important;
+        padding: 10px 20px !important;
+    }
+
+    .contact .form-control {
+        font-size: 25px !important;
+    }
+    /* i:not(.mobile-nav-toggle) {
+        font-size: 20px !important;
+        display: contents !important;
+    } */
+    /* .mobile-nav-toggle {
+        font-size: 60px !important;
+    } */
+
+    i {
+        display: contents;
+    }
+
+    .navbar a {
+        display: block !important;
+        text-align: center !important;
+        font-size: 30px !important;
+        margin-top: 10px !important;
+        /* display: none; */
+    }
+
+    /* .d-none {
+        display: grid !important;
+    } */
 }
 
 @media (max-width: 767px) {

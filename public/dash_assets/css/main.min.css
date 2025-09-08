@@ -12988,12 +12988,12 @@ a:hover {
     padding-left: 80px;
 }
 @media screen and (max-width: 1114px) {
-    .btn_delete {
+    .btn_deletes {
         display: block !important;
         margin-right: 0px !important;
         margin-top: 10px !important;
     }
-    .btn_edit {
+    .btn_edits {
         display: block !important;
 
         /* display: none; */
@@ -13610,10 +13610,12 @@ img.login-logo {
 
 .ttttt {
     transition: all 0.2s ease-in;
+    /* display: none; */
 }
 
 .ttttt:hover {
     transform: scale(1.1);
+    color: #fff;
 }
 
 /* from add */

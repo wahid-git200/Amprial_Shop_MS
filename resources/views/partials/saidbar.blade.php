@@ -12,7 +12,9 @@
           <div class="sidebar-user-profile">
             <img src="{{asset('dash_assets/images/user5.png')}}" class="profile-thumb rounded-circle p-1 d-lg-flex d-none"
               alt="Bootstrap Gallery" />
-            <h5 class="profile-name lh-lg mt-2 text-truncate">{{ Auth::user()->name }}</h5>
+            <h5 class="profile-name lh-lg mt-2 text-truncate">
+                {{ Auth::check() ? Auth::user()->name : 'Guest' }}
+            </h5>
               <hr style="color: aliceblue;  width: 100%; margin-bottom: 0;">
           </div>
           <!-- Sidebar profile ends -->

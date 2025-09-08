@@ -153,12 +153,12 @@
                         </div>
                         <div class="tab-pane fade" id="two" role="tabpanel">
                             
-                          <div style="background: #007ad7; height: 100%; text-align: center; color: #fff; padding: 10px; border-radius: 5px;"><h5>کتگوری های موجود</h5></div>
+                        <div class="boxr">  <div style="background: #007ad7; height: 100%; text-align: center; color: #fff; padding: 10px; border-radius: 5px;"><h5>کتگوری های موجود</h5></div>
                                         <div class=" col-sm-12">
                                             <div class="card mb-4" style="    text-align: center;">
-                                            <div class="card-body" style="width: 87%; margin: 0 auto;">
+                                            <div class="card-body" style="width: 87%; margin: 0 auto; overflow-y: auto; " >
                                                 <div class="table-responsive">
-                                                <table class="table table-striped m-0">
+                                                <table class="table table-striped m-0" style="  min-width: 500px;">
                                                     <thead>
                                                     <tr>
                                                         <th >آی دی</th>
@@ -175,13 +175,13 @@
                                                             <td >{{$catagory->name}}</td>
                                                             <td >{{$catagory->discription}}</td>
                                                             <td >
-                                                                        <a href="#"  style="text-decoration: none; "    data-id="{{ $catagory->id }}"  data-discription="{{$catagory->discription}}" class="update_btn"  data-name="{{ $catagory->name }}">
+                                                                        <a href="#"  style="text-decoration: none; "    data-id="{{ $catagory->id }}"  data-discription="{{$catagory->discription}}" class="update_btn btn_edits"  data-name="{{ $catagory->name }}">
                                                                             <i  title="تغیر"class="bi bi-pencil-square" style="font-size: 22px; padding: 3px; background-color: #00ff379c; color: #0000ffb5; border-radius: 3px;"></i>
                                                                         </a>
-                                                                    <a href="{{route('admin.catagory.delete',['id'=>$catagory->id])}}" onclick="return confirm('آیا مطمئن هستید که می‌خواهید این کامپیوتر را حذف کنید؟');" style=" text-decoration: none; margin-right:10px"  >
+                                                                    <a class="btn_deletes" href="{{route('admin.catagory.delete',['id'=>$catagory->id])}}" onclick="return confirm('آیا مطمئن هستید که می‌خواهید این کامپیوتر را حذف کنید؟');" style=" text-decoration: none; margin-right:10px"  >
                                                                             <i  title="حذف" class="bi bi-trash" style="font-size: 22px; padding: 3px; background-color: #ff00009c; color: #0000ffb5; border-radius: 3px;"></i>
                                                                         </a>                          
-                                                                        <p  class="btn_bay" data-id="" data-type="App\Models\ProductComputers" style=" cursor: pointer; text-decoration: none; margin-right:10px;  display:inline" >
+                                                                        <p  class="btn_bay btn_deletes" data-id="" data-type="App\Models\ProductComputers" style=" cursor: pointer; text-decoration: none; margin-right:10px;  display:inline" >
                                                                             <i title="اضافه کردن کتگوری" class="bi bi-plus-square" style="font-size: 22px; padding: 3px; background-color: #f6ea0b9c; color: #0000ffb5; border-radius: 3px;"></i>
                                                                         </p>                                                         
                                                                     </td> 
@@ -202,7 +202,7 @@
                                             </div>
                                             </div>
                                         </div>
-                        </div>
+                        </div></div>
 
                         <div class="tab-pane fade" id="tree" role="tabpanel">
                                 <form action="{{route('admin.withdrawal.store')}}" class="activer" id="form-comp" method="GET" enctype="multipart/form-data" >
